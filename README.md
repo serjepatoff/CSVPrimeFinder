@@ -4,12 +4,12 @@
 There are also csv files there.
 
 * Before actual processing I've implemented error pre–checks, 
-like input files existence and readability, output file writability.
+like input files existence and readability, output file writability, output filename containment in inputs.
 Checks are chained with short variant of ternary operator, ?:, 
 to find first fail if it exist.
 
-* Naive algorithm, like eratosphene sieve on small 32 or 64-bit integers, 
-seemed too boring for me to employ.
+* Naive algorithm, like Eratosphene sieve on small 32 or 64-bit integers, 
+seemed too boring for me to use.
 Complicated ones are definitely not a matter of one hour.
 So, to be able to process arbitrary-length numbers, 
 I've picked an industry-standard GMP lib.
