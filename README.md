@@ -37,7 +37,6 @@ You can compare the performance:
 contrary to stock [NSArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:...]).
 
 * There are intentional garbage in the input files, like non–numeric fields, spaces, different variants of line breaks.
-All of this stuff is filtered out. 
+All of these are filtered out. 
 
-* I intentionally use C-styled stuff like fprintf(stderr..) or low-level open/read/write calls for probing, 
-because in some cases they are better and more convenient than Objective-C counterparts.
+* I've intentionally used C-styled stuff like fprintf(stderr..) because it is the right way to print usage statistics and error message; or low-level open/read/write calls for probing, because in some cases they are better and more convenient than Objective-C counterparts.
