@@ -29,8 +29,8 @@ I know this is very lame approach, but
 * To make the task more interesting and to demonstrate the speed gain, I engaged multi–core processing.
 You can compare the performance:
  
-[code]time ./CSVPrimeFinder --multi-threaded a.csv b.csv huge.csv out.csv[/code]
-[code]time ./CSVPrimeFinder a.csv b.csv huge.csv out.csv[/code]
+```time ./CSVPrimeFinder --multi-threaded a.csv b.csv huge.csv out.csv
+```time ./CSVPrimeFinder a.csv b.csv huge.csv out.csv
 
 * Simple and dirty parallelMap was implemented. It has explicit concurrency level,
 contrary to stock [NSArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:...]).
