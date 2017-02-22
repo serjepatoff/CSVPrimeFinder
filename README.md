@@ -26,7 +26,7 @@ I know this is very lame approach, but
  (2) fancy async stream processing with zero–copy, engaging heavy machinery like boost::asio, 
      etc, is definitely not a matter of one hour too.
 
-* To make the task more interesting and to demonstrate the speed gain, I engaged multi–core processing.
+* To make the task more interesting and to demonstrate the speed gain, I added multi–core processing.
 You can compare the performance:
  
 ```time ./CSVPrimeFinder --multi-threaded a.csv b.csv huge.csv out.csv```
