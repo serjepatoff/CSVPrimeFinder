@@ -36,7 +36,6 @@ You can compare the performance:
 * Simple and dirty parallelMap was implemented. It has explicit concurrency level,
 contrary to stock [NSArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:...]).
 
-* There are intentional garbage in the input files, like non–numeric fields, spaces, different variants of line breaks.
-All of these are filtered out. 
+* There are intentional garbage in the input files, like non–numeric fields, spaces, different variants of line breaks, to test program robustness. All non-natural numerics are filtered out from output. 
 
 * I've intentionally used C-styled stuff like fprintf(stderr..) because it is the right way to print usage statistics and error message; or low-level open/read/write calls for probing, because in some cases they are better and more convenient than Objective-C counterparts.
