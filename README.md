@@ -5,8 +5,8 @@ There are also csv files there.
 
 * Before actual processing I've implemented error pre–checks, 
 like input files existence and readability, output file writability, output filename containment in inputs.
-Checks are chained with short variant of ternary operator, ?:, 
-to find first fail if it exist.
+Checks are chained with short variant of ternary operator, ?:, to find first fault in the chain (if exists).
+Try, for example, to create csv file from root, and then read from it as simple user.
 
 * Naive algorithm, like Eratosphene sieve on small 32 or 64-bit integers, 
 seemed too boring for me to use.
