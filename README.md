@@ -30,6 +30,7 @@ I know this is very lame approach, but
 You can compare the performance:
  
 ```time ./CSVPrimeFinder --multi-threaded a.csv b.csv huge.csv out.csv
+
 ```time ./CSVPrimeFinder a.csv b.csv huge.csv out.csv
 
 * Simple and dirty parallelMap was implemented. It has explicit concurrency level,
